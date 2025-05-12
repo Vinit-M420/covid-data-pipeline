@@ -1,0 +1,2 @@
+data/owid_data.csv filter=lfs diff=lfs merge=lfs -text
+data/owid-covid-data.csv filter=lfs diff=lfs merge=lfs -text
