@@ -35,8 +35,6 @@ This mini Data Engineering project demonstrates a complete ETL workflow using **
 
 
 
-Folder Structure:
-
   docker/ – Airflow setup, logs, and plugins
   
   dags/ - DAG python files
