@@ -58,7 +58,7 @@ This mini Data Engineering project demonstrates a complete ETL workflow using **
 
 ---
 
-##  How to Run (Add this later)
+##  How to Run 
 
 To run the Airflow pipeline locally using Docker:
 1) Navigate to the docker/ directory
@@ -70,6 +70,13 @@ To run the Airflow pipeline locally using Docker:
 Open http://localhost:8080/dags/ in your browser.
 5) Trigger the DAG manually
 Find covid_data_pipeline in the list and click the ▶️ Trigger DAG button.
+
+---
+<h3>Sample Output</h3>
+
+<p>Below is a sample output showing the top 5 countries by total COVID-19 deaths.</p>
+
+<img src="visuals/top5_total_deaths.png" alt="Top 5 Countries by Total Deaths" width="400"/>
 
 ---
 

@@ -109,6 +109,7 @@ services:
       -  C:/Work/covid-19_data/covid-data-pipeline/data:/opt/airflow/data
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 10s
@@ -128,6 +129,7 @@ services:
       - C:/Work/covid-19_data/covid-data-pipeline/data:/opt/airflow/data
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
       interval: 10s
@@ -154,6 +156,7 @@ services:
       - C:/Work/covid-19_data/covid-data-pipeline/data:/opt/airflow/data
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
     environment:
       <<: *airflow-common-env
       DUMB_INIT_SETSID: "0"
